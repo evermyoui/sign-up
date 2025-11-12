@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'journal';
+    src: url('./font/journal-webfont.woff') format('woff'),
+         url('./font/journal-webfont.woff2') format('woff2');
+}
