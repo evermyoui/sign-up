@@ -3,3 +3,97 @@
     src: url('./font/journal-webfont.woff') format('woff'),
          url('./font/journal-webfont.woff2') format('woff2');
 }
+
+
+/* style reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: 'journal', sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    text-wrap: balance;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    background-image: url('./img/image.png');
+}
+.credits {
+    display: flex;
+    justify-content:center;
+    align-self: flex-end;
+}
+.logo {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 12px 0;
+    filter: blur(0.6px);
+}
+
+.logo p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.credits {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    font-size: 8px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.right-panel {
+    flex: 1.2;
+    background-color: #f9f9f9;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
