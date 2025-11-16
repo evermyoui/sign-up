@@ -22,7 +22,7 @@
                 <p>You belong into this</p>
             </div>
 
-            <section>
+            <section class="section-class">
                 <form action="">
                     <fieldset>
                         <div class="form-row">
@@ -42,9 +42,8 @@
 
                         <div class="form-row">
                             <label for="contact-no">Contact Number: *</label>
-                            <input type="number" id="contact-no" name="user-contact" required>
+                            <input type="text" id="contact-no" name="user-contact" required>
                         </div>
-
                         <div class="form-row">
                             <label for="password">Password: *</label>
                             <input type="password" id="password" name="user-password" required>
@@ -52,7 +51,8 @@
 
                         <div class="form-row">
                             <label for="confirm-password">Confirm Password: *</label>
-                            <input type="password" id="confirm-password" name="user-confirm" required>
+                            <input type="password" id="confirm-password" name="user-confirm-password" required placeholder="">
+                            <p class="error" id="error-message">Passwords do not match!</p>
                         </div>
 
                         <button type="submit">Create Account</button>
@@ -62,5 +62,7 @@
             </section>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

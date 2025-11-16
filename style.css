@@ -97,3 +97,40 @@ p,h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     justify-content: center;
 }
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+    letter-spacing: 0.1em;
+    width: 10%;
+    transition: all 0.2s;
+    padding: 2px 5px;
+}
+
+input:focus {
+    border: 2px solid skyblue;
+    background: grey;
+    width: 300px;
+}
+
+#confirm-password:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+}
+#error-message {
+    color: red;
+    display: none;
+}
+
